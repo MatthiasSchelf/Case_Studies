@@ -10,6 +10,10 @@ data <- read.csv(csv_file)
 # Load required packages
 library(network)
 
+# Filter out rows with "stress" condition, if applicable. Some questionnaires are only answered by the control condition.
+# If you want to use a questionnaire that everybody answered, you can leave this out. 
+data <- data[data$condition != "stress", ]
+
 #Indicate the columns of interest, you can change this to play around.
 columns_of_interest <- c("moral_dilemma_dog","moral_dilemma_wallet","moral_dilemma_plane","moral_dilemma_resume","moral_dilemma_kitten","moral_dilemma_trolley","moral_dilemma_control")
 
