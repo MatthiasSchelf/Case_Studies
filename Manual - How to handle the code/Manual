@@ -10,4 +10,9 @@ For our own analyses, you can consult the analyses folder. Within this folder th
 A couple of things to consider before running the analyses
       All analyses work on the basis of the prepared data. 
       All codes can be ran directly. 
+      Be aware for the analyses for H1 and H3. There one can choose to execute either the general condition (a condition in which
+      average variables are considered the variables of intrerest) or the specific condition (a condition in which specific variables
+      are considered as the variables of interest). Please choose which one you want to execute. 
+
+
       
