@@ -90,7 +90,7 @@ plot(g,
      ylim = range(layout[, 2]))  # Set y-axis limits
 
 
-
+# Now, we will filter out the non-significant correlations and make a network plot from only the significant ones. 
 
 # Adjust p-values using Benjamini-Hochberg (FDR) method
 results_df$adjusted_p_value <- p.adjust(results_df$p_value, method = "BH")
