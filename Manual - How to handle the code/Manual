@@ -7,11 +7,11 @@ Within the Data file you will find three files.
 
 For our own analyses, you can consult the analysis folder. Within this folder there are multiple files, each with their own seperate analyses.
 
-A couple of things to consider before running the analyses
+A couple of things to consider before running the analyses:
       All analyses work on the basis of the prepared data. 
-      Make sure to correclty locate the prepared data and indicate where it is on your computer.
-      All codes can be ran directly. 
-      In every analyses, one can choose to execute either the general condition (a condition in which
+      Make sure to correctly locate the prepared data and indicate where it is on your computer.
+      All codes can be ran completely.
+      Before running an analysis, one needs to choose to execute either the general condition (a condition in which
       average variables are considered the variables of intrerest) or the specific condition (a condition in which specific variables
       are considered as the variables of interest). Please choose which one you want to execute by putting either the gereral
       or specific part in #comments#. 
