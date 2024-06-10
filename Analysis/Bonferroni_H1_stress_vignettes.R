@@ -10,9 +10,12 @@ csv_file <- "C:/Users/Matthias Schelfhout/OneDrive/Bureaublad/Ugent gerelateerd 
 # Read the CSV file into a data frame
 data <- read.csv(csv_file)
 
-# Here again choose whether you want to do the different smaller parts or more general measures 
+# Select one of the two following lines. Either specific or general. 
+
+# Select this line if you are interested in the specific condition. 
 columns_of_interest <- c("condition","moral_dilemma_dog","moral_dilemma_wallet","moral_dilemma_plane","moral_dilemma_resume","moral_dilemma_kitten","moral_dilemma_trolley","moral_dilemma_control")
 
+# Select this line if you are interested in the general condition.
 #columns_of_interest <- c("condition", "moral_judgment","moral_judgment_disgust","moral_judgment_non_disgust")
 
 # Select only the columns of interest and put them in "scores"
@@ -91,7 +94,7 @@ plot(g,
 
 
 
-# Here we check for significance with t-tests and bonferonni correction
+# Here we check for significance with t-tests and bonferonni correction. Lastly we make a new network plot, only using the significant correlations.
 
 # Number of pairwise comparisons
 num_comparisons <- nrow(edge_list)
