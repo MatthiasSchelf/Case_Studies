@@ -12,7 +12,7 @@ data <- read.csv(csv_file)
 # If you want to use a questionnaire that everybody answered, you can leave this out. 
 data_filtered <- data[data$condition != "stress", ]
 
-# Run one of the two following lines, whether you are interested in the general or specific condition.
+# Select one of the two following lines, whether you are interested in the general or specific condition.
 
 # Here we put in the separate PBC and MAIA variable, specific condition
 columns_of_interest <- c("PBC_1","PBC_2","PBC_3","PBC_4","PBC_5","MAIA_1_1","MAIA_1_2","MAIA_1_3","MAIA_1_4","MAIA_1_5","MAIA_1_6","MAIA_1_7","MAIA_1_8","MAIA_1_9","MAIA_1_10","MAIA_1_11","MAIA_1_12","MAIA_1_13","MAIA_1_14","MAIA_1_15","MAIA_2_1",
