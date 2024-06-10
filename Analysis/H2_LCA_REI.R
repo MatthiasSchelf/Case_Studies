@@ -6,7 +6,7 @@ library(mclust)
 csv_file <- "C:/Users/Matthias Schelfhout/OneDrive/Bureaublad/Ugent gerelateerd - Drive/2de Master/Case_Study_Analysis/dataverse_files/prepared_data.csv"
 data <- read.csv(csv_file)
 
-# Again choose general or specific
+# From the following two lines, only select one. Either specific or genereal. 
 
 # Select columns of interest for LCA (specific)
 #columns_of_interest <- c("REI_1","REI_2","REI_3","REI_4","REI_5","REI_6","REI_7","REI_8","REI_9","REI_10",
@@ -15,8 +15,8 @@ data <- read.csv(csv_file)
 #                         "REI_29","REI_30","REI_31","REI_32","REI_33","REI_34","REI_35","REI_36","REI_37",
 #                         "REI_38","REI_39","REI_40")
 
-# Select columns of interest for LCA (general)
 
+# Select columns of interest for LCA (general)
 columns_of_interest <- c("REI_rational_ability","REI_rational_engagement","REI_experiental_ability","REI_experiental_engagement");
 
 # Extract selected columns
@@ -32,7 +32,7 @@ scores_categorical <- na.omit(scores_categorical)
 scores_numeric <- as.data.frame(lapply(scores_categorical, as.numeric))
 
 # Fit the LCA model with mclust
-# The number of clusters G = 2 (experiental and rational)
+# You can change G if you want to see the results for a different amount of clusters. 
 lca_model <- Mclust(scores_numeric, G = 2)
 
 # View the summary of the model
