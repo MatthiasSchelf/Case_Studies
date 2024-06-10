@@ -12,13 +12,13 @@ data <- read.csv(csv_file)
 # If you want to use a questionnaire that everybody answered, you can leave this out. 
 data_filtered <- data[data$condition != "stress", ]
 
-# Run one of the two following lines, depending on which you are interested in.
+# Run one of the two following lines, whether you are interested in the general or specific condition.
 
-# Here we put in the separate PBC and MAIA variable, all separate measures
+# Here we put in the separate PBC and MAIA variable, specific condition
 columns_of_interest <- c("PBC_1","PBC_2","PBC_3","PBC_4","PBC_5","MAIA_1_1","MAIA_1_2","MAIA_1_3","MAIA_1_4","MAIA_1_5","MAIA_1_6","MAIA_1_7","MAIA_1_8","MAIA_1_9","MAIA_1_10","MAIA_1_11","MAIA_1_12","MAIA_1_13","MAIA_1_14","MAIA_1_15","MAIA_2_1",
                          "MAIA_2_1","MAIA_2_2","MAIA_2_3","MAIA_2_4","MAIA_2_5","MAIA_2_6","MAIA_2_7","MAIA_2_8","MAIA_2_9","MAIA_2_10","MAIA_2_11","MAIA_2_12","MAIA_2_13","MAIA_2_14","MAIA_2_15","MAIA_2_16")
 
-# Here we put the combined PBC and combined MAIA measures
+# Here we put the combined PBC and combined MAIA measures, general condition
 # columns_of_interest <- c("PBC", "MAIA_trusting","MAIA_body_listening", "MAIA_self_regulation","MAIA_emotional_awareness","MAIA_attention_regulation","MAIA_not_worrying","MAIA_not_distracting","MAIA_noticing")
 
 # Select only the columns of interest and put them in "scores"
@@ -94,10 +94,6 @@ plot(g,
 
 
 
-
-# Here we check for significance.
-
-
 # Here we check for significance.
 
 # Number of pairwise correlations
@@ -125,7 +121,7 @@ print(results_df)
 
 
 
-
+# Here we will filter out the non-significant correlations and plot only the significant correlations.
 
 # Filter out non-significant correlations
 significant_edge_list <- edge_list[results_df$is_significant, ]
