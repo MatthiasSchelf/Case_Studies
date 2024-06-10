@@ -6,6 +6,10 @@ library(mclust)
 csv_file <- "C:/Users/Matthias Schelfhout/OneDrive/Bureaublad/Ugent gerelateerd - Drive/2de Master/Case_Study_Analysis/dataverse_files/prepared_data.csv"
 data <- read.csv(csv_file)
 
+# Filter out rows with "stress" condition, if applicable. Some questionnaires are only answered by the control condition.
+# If you want to use a questionnaire that everybody answered, you can leave this out. 
+data_filtered <- data[data$condition != "stress", ]
+
 # From the following two lines, only select one. Either specific or genereal. 
 
 # Select columns of interest for LCA (specific)
@@ -20,7 +24,7 @@ data <- read.csv(csv_file)
 columns_of_interest <- c("REI_rational_ability","REI_rational_engagement","REI_experiental_ability","REI_experiental_engagement");
 
 # Extract selected columns
-scores <- data[, columns_of_interest]
+scores <- data_filtered[, columns_of_interest]
 
 # Ensure that REI variables are treated as categorical
 scores_categorical <- as.data.frame(lapply(scores, as.factor))
