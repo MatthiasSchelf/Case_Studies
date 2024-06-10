@@ -9,7 +9,7 @@ For our own analyses, you can consult the analysis folder. Within this folder th
 
 A couple of things to consider before running the analyses
       All analyses work on the basis of the prepared data. 
-      Make sure to correclty locate the prepared data and indicate where it is stored.
+      Make sure to correclty locate the prepared data and indicate where it is on your computer.
       All codes can be ran directly. 
       In every analyses, one can choose to execute either the general condition (a condition in which
       average variables are considered the variables of intrerest) or the specific condition (a condition in which specific variables
