@@ -14,7 +14,7 @@ A couple of things to consider before running the analyses:
       Before running an analysis, one needs to choose to execute either the general condition (a condition in which
       average variables are considered the variables of intrerest) or the specific condition (a condition in which specific variables
       are considered as the variables of interest). Please choose which one you want to execute by putting either the gereral
-      or specific part in #comments#. 
+      or specific part in #comments#. The part where you need to choose between the general and specific condition are indicated within the scripts. 
 
 
       
