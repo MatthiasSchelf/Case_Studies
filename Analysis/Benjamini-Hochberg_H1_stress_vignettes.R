@@ -8,9 +8,12 @@ library(igraph)
 csv_file <- "C:/Users/carov/Documents/1 SCHOOL/1. UGent/1ste master/Year 2024/Anaysis/dataverse_files/prepared_data.csv"
 data <- read.csv(csv_file)
 
-# Here again choose whether you want to do the different smaller parts or more general measures 
+# Select one of the two following lines. You can choose to either do specific or general analysis.
+
+# Specific analysis
 columns_of_interest <- c("condition","moral_dilemma_dog","moral_dilemma_wallet","moral_dilemma_plane","moral_dilemma_resume","moral_dilemma_kitten","moral_dilemma_trolley","moral_dilemma_control")
 
+# General Analysis
 #columns_of_interest <- c("condition", "moral_judgment","moral_judgment_disgust","moral_judgment_non_disgust")
 
 # Select only the columns of interest and put them in "scores"
