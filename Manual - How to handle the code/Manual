@@ -1,14 +1,15 @@
 How to handle the data and code. 
 
-Withing the code file you will finde three files. 
+Within the Data file you will find three files. 
       One with the raw data.
       One with the prepared data. 
-      One with the code that convert the raw data to the prepared data. This code was not made by us but by the original author. 
+      One with the code that converts the raw data to the prepared data. This code was not made by us but by the original author. 
 
-For our own analyses, you can consult the analyses folder. Within this folder there are multiple files, each with their own seperate analyses.
+For our own analyses, you can consult the analysis folder. Within this folder there are multiple files, each with their own seperate analyses.
 
 A couple of things to consider before running the analyses
       All analyses work on the basis of the prepared data. 
+      Make sure to correclty locate the prepared data and indicate where it is stored.
       All codes can be ran directly. 
       In every analyses, one can choose to execute either the general condition (a condition in which
       average variables are considered the variables of intrerest) or the specific condition (a condition in which specific variables
