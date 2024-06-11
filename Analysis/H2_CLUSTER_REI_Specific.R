@@ -73,14 +73,11 @@ cluster_profiles <- scores_numeric %>%
   group_by(cluster) %>%
   summarize(across(starts_with("REI_"), mean, na.rm = TRUE))
 
-# Print the cluster profiles
-View(cluster_profiles)
+# Compute the mean over all means of the REI items for Cluster 1 and Cluster 2
+mean_cluster1 <- mean(rowMeans(cluster_profiles[cluster_profiles$cluster == 1, -1]), na.rm = TRUE)
+mean_cluster2 <- mean(rowMeans(cluster_profiles[cluster_profiles$cluster == 2, -1]), na.rm = TRUE)
 
+# Print the mean scores for Cluster 1 and Cluster 2
+print(mean_cluster1)
+print(mean_cluster2)
 
-# Example interpretation
-for (i in unique(scores_numeric$cluster)) {
-  cat("Cluster", i, "\n")
-  cat("Mean REI scores:\n")
-  print(cluster_profiles[cluster_profiles$cluster == i,])
-  cat("\n")
-}
