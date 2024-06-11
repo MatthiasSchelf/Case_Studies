@@ -12,7 +12,7 @@ A couple of things to consider before running the analyses:
       Make sure to correctly locate the prepared data and indicate where it is on your computer.
       All codes can be ran completely.
       The name of the different codes are straightforward. However, let's discuss one example: H1_MAIA_PBC_General_Bonfererroni.
-      This code will give the results of the first hypothesis (which concerns network analysis), in the form of general results 
-      with the Bonferroni correction.
+      This code will give the results of the first hypothesis (which concerns network analysis), in the form of general results
+      of the MAIA and PBC variables with the Bonferroni correction.
 
       
