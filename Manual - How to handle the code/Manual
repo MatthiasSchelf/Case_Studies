@@ -11,10 +11,8 @@ A couple of things to consider before running the analyses:
       All analyses work on the basis of the prepared data. 
       Make sure to correctly locate the prepared data and indicate where it is on your computer.
       All codes can be ran completely.
-      Before running an analysis, one needs to choose to execute either the general condition (a condition in which
-      average variables are considered the variables of intrerest) or the specific condition (a condition in which specific variables
-      are considered as the variables of interest). Please choose which one you want to execute by putting either the gereral
-      or specific part in #comments#. The part where you need to choose between the general and specific condition are indicated within the scripts. 
-
+      The name of the different codes are straightforward. However, let's discuss one example: H1_MAIA_PBC_General_Bonfererroni.
+      This code will give the results of the first hypothesis (which concerns network analysis), in the form of general results 
+      with the Bonferroni correction.
 
       
